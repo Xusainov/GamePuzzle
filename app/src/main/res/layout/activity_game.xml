@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".puzzle.GameActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:padding="7dp"
+        android:layout_height="?actionBarSize"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_marginRight="20dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/back"
+        android:layout_marginTop="14dp"
+        android:text="Game types"
+        android:textColor="#1ECBE1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:backgroundTint="@null"
+        android:id="@+id/uch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="296dp"
+        android:background="@drawable/main_item"
+        android:text="3x3"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        app:backgroundTint="@null"
+        android:id="@+id/turt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/main_item"
+        android:text="4x4"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/uch" />
+
+    <Button
+        app:backgroundTint="@null"
+        android:id="@+id/besh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+       android:background="@drawable/main_item"
+        android:text="5x5"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/turt" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
